@@ -1,4 +1,4 @@
-InterTecHub Simple Server
+InterTecHub Simple Server live at https://jemberu.pythonanywhere.com/
 Follow the instructions below to set up and run the server locally.
 ## Prerequisites
 
@@ -27,7 +27,7 @@ Quit the server with CONTROL-C.
 
 
 Access the Server
-Open your browser and visit the following URLs:
+Open your browser and visit the following on your local machine:
 
 Name Route: http://127.0.0.1:8000/messages/name/
 Response: "Jemberu Kassie"
@@ -37,6 +37,8 @@ Response: {"hobby": "Exploring technology related things"}
 
 Dream Route: http://127.0.0.1:8000/messages/dream/
 Response: "My dream is to build impactful technology solutions."
+
+or you can click the link that displays on the home page
 Additional Notes
 If you encounter any issues, ensure all dependencies are installed correctly.
 For any database-related errors, delete the db.sqlite3 file and rerun the migrations:
