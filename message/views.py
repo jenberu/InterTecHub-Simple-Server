@@ -1,9 +1,20 @@
 from django.http import JsonResponse ,HttpResponse
 
 def home(request):
-    return JsonResponse({"hobby-url": "http://127.0.0.1:8000/messages/hobby",
-                         "name-url":"http://127.0.0.1:8000/messages/name",
-                         "dream-url":"http://127.0.0.1:8000/messages/dream"})
+    response_content = """
+    <html>
+        <body>
+            <h1>Welcome to My Simple Django Server!</h1>
+            <ul>
+                <li><a href="/message/name">Name</a></li>
+
+                <li><a href="/message/hobby">Hobby</a></li>
+                <li><a href="/message/dream">Dream</a></li>
+            </ul>
+        </body>
+    </html>
+    """
+    return HttpResponse(response_content)
 def my_name(request):
     return HttpResponse("Jemberu Kassie")
 def my_hobby(request):
